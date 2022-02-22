@@ -43,11 +43,11 @@ class Home extends StatelessWidget {
             children: [
               TweenAnimationBuilder<double>(
                   tween: Tween(begin: 0, end: 1),
-                  duration: const Duration(seconds: 1),
+                  duration: const Duration(seconds: 500),
                   curve: Curves.bounceOut,
                   builder: (context, value, _) {
                     return AnimatedOpacity(
-                      duration: const Duration(milliseconds: 200),
+                      duration: const Duration(milliseconds: 100),
                       opacity: value,
                       child: Container(
                         padding: const EdgeInsets.all(8),
@@ -66,7 +66,7 @@ class Home extends StatelessWidget {
               Flexible(
                 child: TweenAnimationBuilder<double>(
                     tween: Tween(begin: 0, end: 1),
-                    duration: const Duration(milliseconds: 1500),
+                    duration: const Duration(milliseconds: 800),
                     builder: (context, value, _) {
                     return Container(
                       padding: const EdgeInsets.all(15),
@@ -84,7 +84,7 @@ class Home extends StatelessWidget {
                           ),
                           const Gap(10),
                           AnimatedOpacity(
-                            duration: const Duration(milliseconds: 500),
+                            duration: const Duration(milliseconds: 300),
                             opacity: value,
                             child: Text(
                               value<0.5 ? '' : 'Search',
@@ -124,7 +124,7 @@ class Home extends StatelessWidget {
           const Gap(10),
           TweenAnimationBuilder<double>(
               tween: Tween(begin: 0, end: 1),
-              duration: const Duration(seconds: 1),
+              duration: const Duration(milliseconds: 500),
               builder: (context, value, _) {
               return Stack(
                 children: [

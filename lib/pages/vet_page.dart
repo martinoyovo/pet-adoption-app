@@ -113,7 +113,8 @@ class _VetPageState extends State<VetPage> {
                 const Gap(100),
                 AnimatedContainer(
                   margin: EdgeInsets.only(bottom: headerHeight == 0 ? 0 : 16),
-                  duration: const Duration(milliseconds: 500),
+                  duration: const Duration(milliseconds: 200),
+                  curve: Curves.easeInExpo,
                   width: double.infinity,
                   height: headerHeight,
                   decoration: BoxDecoration(

@@ -64,7 +64,7 @@ class _GroomingPageState extends State<GroomingPage> {
               children: [
                 TweenAnimationBuilder<double>(
                     tween: Tween(begin: 0, end: 1),
-                    duration: const Duration(seconds: 1),
+                    duration: const Duration(milliseconds: 500),
                     builder: (context, value, _) {
                       return Stack(
                         children: [
@@ -149,7 +149,7 @@ class _GroomingPageState extends State<GroomingPage> {
             TweenAnimationBuilder<double>(
                 tween: Tween(begin: 0, end: 1),
                 curve: Curves.easeInExpo,
-                duration: const Duration(seconds: 1),
+                duration: const Duration(milliseconds: 500),
                 builder: (context, value, _) {
                 return Text(
                   'Dog Grooming Packages',
@@ -193,7 +193,7 @@ class _GroomingPageState extends State<GroomingPage> {
                   return AnimatedScale(
                     scale: value,
                     curve: Curves.bounceOut,
-                    duration: const Duration(seconds: 2),
+                    duration: const Duration(seconds: 1),
                     child: ElevatedButton(
                       onPressed: () {},
                       child: Row(

@@ -13,7 +13,7 @@ class GetStarted extends StatelessWidget {
     return Material(
       child: TweenAnimationBuilder<double>(
           tween: Tween(begin: 0, end: 1),
-          duration: const Duration(milliseconds: 1500),
+          duration: const Duration(milliseconds: 700),
           builder: (context, value, _) {
           return Column(
             children: [
