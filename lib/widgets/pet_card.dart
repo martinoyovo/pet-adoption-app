@@ -62,6 +62,14 @@ class _PetCardState extends State<PetCard> {
                         curve: Curves.bounceInOut,
                         child: ElevatedButton(
                           onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                            elevation: 0,
+                            fixedSize: const Size(90, 0),
+                            primary: Styles.bgWithOpacityColor,
+                            shape: const StadiumBorder(),
+                            padding:
+                                const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+                          ),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
@@ -76,14 +84,6 @@ class _PetCardState extends State<PetCard> {
                                 width: 14,
                               )
                             ],
-                          ),
-                          style: ElevatedButton.styleFrom(
-                            elevation: 0,
-                            fixedSize: const Size(90, 0),
-                            primary: Styles.bgWithOpacityColor,
-                            shape: const StadiumBorder(),
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
                           ),
                         ),
                       ),

@@ -1,10 +1,8 @@
 import 'package:adoptme/models/package_details.dart';
 import 'package:adoptme/utils/styles.dart';
 import 'package:adoptme/widgets/back_button.dart';
-import 'package:adoptme/widgets/book_button.dart';
 import 'package:adoptme/widgets/vet_card.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
 
 class VetPage extends StatefulWidget {

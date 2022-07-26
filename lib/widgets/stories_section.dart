@@ -1,4 +1,3 @@
-import 'package:adoptme/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 

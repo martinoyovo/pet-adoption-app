@@ -112,6 +112,14 @@ class _GroomingPageState extends State<GroomingPage> {
                                 duration: const Duration(milliseconds: 400),
                                 child: ElevatedButton(
                                     onPressed: () {},
+                                    style: ElevatedButton.styleFrom(
+                                      elevation: 0,
+                                      fixedSize: Size(value * 150, value * 44),
+                                      primary: Styles.bgWithOpacityColor,
+                                      shape: const StadiumBorder(),
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 10, vertical: 0),
+                                    ),
                                     child: Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
@@ -130,14 +138,6 @@ class _GroomingPageState extends State<GroomingPage> {
                                             'assets/svg/arrow_down.svg',
                                             height: value * 30)
                                       ],
-                                    ),
-                                    style: ElevatedButton.styleFrom(
-                                      elevation: 0,
-                                      fixedSize: Size(value * 150, value * 44),
-                                      primary: Styles.bgWithOpacityColor,
-                                      shape: const StadiumBorder(),
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 10, vertical: 0),
                                     )),
                               ))
                         ],
@@ -196,6 +196,14 @@ class _GroomingPageState extends State<GroomingPage> {
                     duration: const Duration(seconds: 1),
                     child: ElevatedButton(
                       onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        elevation: 0,
+                        fixedSize: const Size(215, 44),
+                        primary: Styles.bgColor,
+                        shape: const StadiumBorder(),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 8, vertical: 0),
+                      ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -212,14 +220,6 @@ class _GroomingPageState extends State<GroomingPage> {
                                   'assets/svg/arrow_down2.svg',
                                   height: 7))
                         ],
-                      ),
-                      style: ElevatedButton.styleFrom(
-                        elevation: 0,
-                        fixedSize: const Size(215, 44),
-                        primary: Styles.bgColor,
-                        shape: const StadiumBorder(),
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 8, vertical: 0),
                       ),
                     ),
                   );
