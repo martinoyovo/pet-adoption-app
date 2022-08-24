@@ -53,13 +53,13 @@ class GetStarted extends StatelessWidget {
                     Navigator.push(
                         context, MaterialPageRoute(builder: (_) => const Home()));
                   },
-                  child: const Text('Get Started',
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17)),
                   style: ElevatedButton.styleFrom(
                     elevation: 0,
                     shape: const StadiumBorder(),
                     padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
                   ),
+                  child: const Text('Get Started',
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17)),
                 ),
               )
             ],
